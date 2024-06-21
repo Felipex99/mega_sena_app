@@ -1,12 +1,12 @@
 import React from "react"
-import { View, StyleSheet } from "react-native"
-import Quadrado from "./Quadrado"
+import { View, StyleSheet, Text } from "react-native"
 export default ()=>{
     return(
         <View style = {style.V0}>
-            <Quadrado cor = "#ff33cc" style = {style.V0}/>
-            <Quadrado cor = "#009" style = {style.V1}/>
-            <Quadrado cor = "#090" style = {style.V2}/>
+            <Text style = {{fontWeight:"bold",fontSize: 40, color:"black"}}>V0</Text>
+            <View style = {style.V1}/>
+            <View style = {style.V2}/>
+            <View style = {style.V3}/>
         </View>
     )
 }
@@ -18,11 +18,11 @@ const style = StyleSheet.create({
         backgroundColor:"#900",
     },
     V1:{
-        height:300,
         backgroundColor:"#ff33cc",
+        flexGrow:1,
     },
     V2:{
-        flexGrow:3,
+        flexGrow:1,
         backgroundColor:"#990",
     },
     V3:{
